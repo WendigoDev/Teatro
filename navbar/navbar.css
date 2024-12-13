@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background: #6c0f05;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.navbar-img{
+    width: 60px;
+    height: 60px;
+}
+
+.navbar-list{
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-list li{
+    list-style: none;
+    background-color: white;
+    height: 35px;
+    width: 35px;
+    border-radius: 20px;
+}
