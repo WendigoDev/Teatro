@@ -10,6 +10,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 10px 60px 10px 54px;
+    padding: 10px 60px 10px 54px;
 }
 
 .navbar-img {
@@ -20,6 +21,7 @@ body {
 
 .navbar-list {
     display: flex;
+    gap: 68px;
     gap: 68px;
 }
 

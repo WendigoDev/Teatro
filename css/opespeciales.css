@@ -1,0 +1,263 @@
+
+/* Inicio del body */
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+
+}
+/* Para tener una imagen de fondo */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* aca se coloca la url de cualquier imagen */
+    background-image: url(../imagenes/gamA.png);
+    background-size: 80%;
+    background-position: center;
+    filter: blur(1px);
+    z-index: -1;
+}
+.content-wrapper {
+    position: relative;
+    z-index: 1;
+}
+/* Fin de body */
+/*Inicio de Navbar*/
+.navbar {
+    background-color: #6c0f05;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 60px 10px 54px;
+}
+
+.navbar-img {
+    width: 280px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 68px;
+}
+
+.navbar-list li {
+    list-style: none;
+    background-color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+}
+
+/*Fin de Navbar*/
+/* Inicio del menu gris */
+.menu {
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 5px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+
+.otrascompras {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.otrascompras select {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+/* Fin del menu gris */
+
+/* calendario */
+.calendarios-container {
+    display: flex;
+    gap: 0px;
+    justify-content: center;
+}
+
+.calendario {
+    border: 0px solid #ddd;
+    padding: 15px;
+}
+
+.calendario th {
+    border: 1px solid #ddd;
+    padding: 5px;
+    background-color: #f0f0f0;
+}
+
+.calendario td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+/* Fin del calendario */
+
+
+.menu-list a {
+    color: rgb(171, 177, 177);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.button {
+    background-color: rgb(159, 166, 166);
+    color: rgb(244, 238, 238);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 2%;
+}
+
+
+
+.titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+    text-decoration: none;
+    position: relative;
+
+}
+
+.box {
+    background-color: #ffffff;
+    color: #111111;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.flex-container h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #111111;
+    background-color: #efeeee;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    margin: 10px;
+}
+
+.calendario {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flexbox;
+
+}
+
+.box-especial {
+    height: 100%;
+    width: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgb(187, 187, 187);
+    border-radius: 20px;
+
+}
+
+.box-opciones a {
+    border-radius: 20px 0 0 20px;
+    height: 60px;
+    width: 100%;
+
+}
+
+.box-opciones {
+    height: 100%;
+    width: 20%;
+
+}
+
+/* Estilo para las opciones laterales del costado derecho */
+.nav-container {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.nav-item {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+    border-radius: 25px 0 0 25px;
+    cursor: pointer;
+    transition: width 0.3s ease;
+}
+
+.nav-item:hover {
+    width: 60px;
+}
+
+.nav-item i {
+    color: white;
+    font-size: 20px;
+}
+
+.teatro {
+    background-color: #6B5ECD;
+}
+
+.dance {
+    background-color: #D4AF37;
+}
+
+.music {
+    background-color: #90EE90;
+}
+
+.gallery {
+    background-color: #DDA0DD;
+}
